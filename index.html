@@ -63,6 +63,14 @@
     .info-grid { grid-template-columns: 1fr; }
     header h1 { font-size: 1.9rem; }
   }
+  .info-grid > .card-centered {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 1rem);
+  }
+  @media (max-width: 640px) {
+    .info-grid > .card-centered { width: 100%; }
+  }
   .card {
     background: #fff;
     border: 1px solid #e3ddd0;
@@ -145,8 +153,13 @@
     </div>
     <div class="card">
       <h3>Confessions</h3>
+      <div class="schedule-row"><span>Fridays</span><span>8:00&ndash;9:00 am</span></div>
       <div class="schedule-row"><span>Saturdays</span><span>4:00&ndash;5:00 pm</span></div>
       <div class="schedule-row"><span>Other times</span><span>By appointment</span></div>
+    </div>
+    <div class="card card-centered">
+      <h3>Adoration</h3>
+      <div class="schedule-row"><span>Fridays</span><span>8:00&ndash;9:00 am</span></div>
     </div>
   </section>
 
